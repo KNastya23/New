@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    --color1: #F27121;
+    --color2: #8A2387;
+    --color3: #FFC600;
+    --color4: #E900FF;
+    --color5: #F7ECDE;
+
+}
+
+* {
+    padding: 0; /*Resetting inner padding*/
+
+    margin: 0; /*Resetting outer padding*/
+
+}
+
+body {
+
+
+    height: 100vh; /*100 percent of the active Viewport geometry height*/
+
+
+    background-color: #F7ECDE;
+}
+
+.pageContainer {
+    background-color: #E9DAC1;
+    height: 100vh;
+    display: grid; /*Setting the Grid system as layout system for the Children elements of the page, which is Rows by default to each element*/
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+}
+
+.item {
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navBar {
+
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+    background-color: linear-gradient(to right, var(--color1), var(--color2) transperent);
+}
+
+.Footer {
+
+    grid-column: 1 / span 12;
+    grid-row: 12 / span 1;
+
+    background-color: linear-gradient(to right, var(--color1), var(--color2) transperent);
+}
+
+.topBar {
+    grid-column: 2 / span 10;
+    grid-row: 2 / span 1;
+
+    background-color: var(--color5);
+}
+
+.l-sPanel {
+
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 10;
+}
+
+.r-sPanel {
+
+    grid-column: 12 / span 1;
+    grid-row: 2 / span 10;
+
+}
+
+.bodyPart {
+
+    grid-column: 2 / span 10;
+    grid-row: 3 / span 9;
+
+}
+
+
+
+
+

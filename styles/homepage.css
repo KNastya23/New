@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --c1: #277BC0;
+    --c2: #610C63;
+    --c3: #810955;
+    --c4: #FFF4CF;
+    --c5: #293462;
+    --c6: #1CD6CE;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.myBtn {
+    box-shadow: 0 5px 100px black;
+
+}
+
+.myBtn:hover {
+    transform: scale(1.1, 1.1);
+    transition: transform 1s;
+
+
+}
+
+#Body {
+    background: radial-gradient(var(--c4), var(--c5), var(--c3), transparent),
+    radial-gradient(var(--c1), var(--c2), var(--c6), transparent);
+    background-size: 400% 400%;
+    -webkit-animation: liquidBG 20s ease-in-out infinite;
+
+
+
+}
+
+
+@-webkit-keyframes liquidBG {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 150%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
